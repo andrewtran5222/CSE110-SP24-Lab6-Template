@@ -1,6 +1,3 @@
+1. I would fit my automated tests within a Github action that runs whenever the code is pushed, because it would run the tests when changes are actually committed. Manually running them locally is too early and might run into the problem successfully running on a local environment while not working on the main repo, leading to inconsistencies. Running them after all development is completed is too late, and if the tests fail, it may be hard to go back and find what exactly caused the problem.
 
-
-
-
-
-
+2. No, end to end tests test a simulation of the application based on user flow, seeing if many things work together in conjunction, rather than the possible output of a single function. 
